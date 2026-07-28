@@ -7,6 +7,18 @@ def analyzeURL(string):
         print("The URL is secure.")
     else:
         print("The URL is not secure.")
+    if "@" in string:
+        print("the url contains an @ symbol.")
+    else:
+        print("the url does not contain an @ symbol.")
+    if "login" in string:
+        print("the url contains the word 'login'.")
+    else:
+        print("the url does not contain the word 'login'.")
+    if string.endswith(".com"):
+        print("the url ends with '.com'.")
+    else:
+        print("the url does not end with '.com'.")
     for i in string:
         if i == ".":
             dotCount += 1
